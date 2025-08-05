@@ -1,0 +1,2411 @@
+
+2024-12-23 10:19:19,695 - ERROR - products - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\products\products.py", line 307, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\products\products.py", line 296, in main
+    manage_products_or_planner(base_dir, cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 712, in manage_products_or_planner
+    data_token_key, data_token_value, session = products_func(count_switch, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\products\products.py", line 63, in products
+    dashboard_response = session.get(dashboard_url, headers=headers)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-12-23 10:19:19,692 - ERROR - planner - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 311, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 301, in main
+    manage_products_or_planner(base_dir, cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 712, in manage_products_or_planner
+    data_token_key, data_token_value, session = products_func(count_switch, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 68, in products
+    dashboard_response = session.get(dashboard_url, headers=headers)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-12-23 15:50:43,784 - ERROR - planner - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 208, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002771D356140>, 'Connection to app.sellerboard.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002771D356140>, 'Connection to app.sellerboard.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 311, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 301, in main
+    manage_products_or_planner(base_dir, cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 712, in manage_products_or_planner
+    data_token_key, data_token_value, session = products_func(count_switch, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 68, in products
+    dashboard_response = session.get(dashboard_url, headers=headers)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002771D356140>, 'Connection to app.sellerboard.com timed out. (connect timeout=None)'))
+2024-12-27 08:59:39,323 - ERROR - sb_dashb_3days - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 105, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 96, in main
+    main_frame(base_dir=base_dir, cookies_file=cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 583, in main_frame
+    dashboard_session_id, sb_acc_id, sb_user_id, data_token_key, data_token_value, change_flag = prepare_variabels(
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 137, in prepare_variabels
+    dashboard_session_id_match = re.search(r'data-dashboardSessionId\s*=\s*"(.*?)"', switchAccount_resp)
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\re.py", line 200, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+2025-01-21 11:10:07,083 - ERROR - sb_dashb_3days - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 107, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 96, in main
+    main_frame(base_dir=base_dir, cookies_file=cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 585, in main_frame
+    switchAccount_resp = switch_account(table_sb_acc_id, data_token_key, data_token_value, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 72, in switch_account
+    switch_account_response = session.post(switch_account_url, data=post_data, headers=headers)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-01-21 11:10:33,202 - ERROR - sellerboard_interaction - manage_products_or_planner - Account ZOKLU returned exception after 2 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 755, in manage_products_or_planner
+    flag_status, session = export_status_func(data_token_key, data_token_value, task_id, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 171, in export_status
+    response_post = session.post(url, data=payload, timeout=(60, 120))
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-01-27 10:13:48,355 - ERROR - sb_dashb_3days - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 107, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 96, in main
+    main_frame(base_dir=base_dir, cookies_file=cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 614, in main_frame
+    cou = get_data_from_download(
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 515, in get_data_from_download
+    filtered_rows = get_filtered_rows()
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 477, in get_filtered_rows
+    len_all_rows = ttl_len_rows(sheet_name, spreadsheet_id)
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 275, in ttl_len_rows
+    ttl_rows = t.try_table_operation(lambda: sheet.get_all_values())
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 515, in try_table_operation
+    raise e
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 485, in try_table_operation
+    return operation()  # Attempt to execute the operation
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 275, in <lambda>
+    ttl_rows = t.try_table_operation(lambda: sheet.get_all_values())
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\worksheet.py", line 483, in get_all_values
+    return self.get_values(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\worksheet.py", line 460, in get_values
+    return self.get(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\worksheet.py", line 952, in get
+    response = self.client.values_get(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 236, in values_get
+    r = self.request("get", url, params=params)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 114, in request
+    response = self.session.request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\google\auth\transport\requests.py", line 538, in request
+    response = super(AuthorizedSession, self).request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 746, in send
+    r.content
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\models.py", line 902, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\response.py", line 1057, in stream
+    yield from self.read_chunked(amt, decode_content=decode_content)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\response.py", line 1210, in read_chunked
+    decoded = self._decode(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\response.py", line 481, in _decode
+    data = self._decoder.decompress(data)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\response.py", line 127, in decompress
+    ret += self._obj.decompress(data)
+MemoryError: Unable to allocate output buffer.
+2025-01-27 10:16:49,946 - ERROR - planner - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 310, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 300, in main
+    manage_products_or_planner(base_dir, cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 720, in manage_products_or_planner
+    data_token_key, data_token_value, session = products_func(count_switch, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 70, in products
+    dashboard_resp = dashboard_response.text
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\models.py", line 935, in text
+    content = str(self.content, encoding, errors="replace")
+MemoryError
+2025-01-31 09:21:27,909 - ERROR - sb_dashb_3days - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 106, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 95, in main
+    main_frame(base_dir=base_dir, cookies_file=cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 586, in main_frame
+    dashboard_session_id, sb_acc_id, sb_user_id, data_token_key, data_token_value, change_flag = prepare_variabels(
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 138, in prepare_variabels
+    dashboard_session_id_match = re.search(r'data-dashboardSessionId\s*=\s*"(.*?)"', switchAccount_resp)
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\re.py", line 200, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+2025-02-04 11:00:22,228 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 1 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10065] A socket operation was attempted to an unreachable host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x0000020E394A0400>: Failed to establish a new connection: [WinError 10065] A socket operation was attempted to an unreachable host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='sheets.googleapis.com', port=443): Max retries exceeded with url: /v4/spreadsheets/1b9lVGArClr21SG13osGk0rfkBAokUvdyuRgKg4-9e3Q?includeGridData=false (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000020E394A0400>: Failed to establish a new connection: [WinError 10065] A socket operation was attempted to an unreachable host'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 763, in manage_products_or_planner
+    cou = get_data_from_download_func(json_res, session, sheet_name, spreadsheet_id)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 283, in get_data_from_download
+    fill_table(filtered_rows)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 234, in fill_table
+    t = Table(spreadsheet_id)  # for working
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 36, in __init__
+    self.spreadsheet = self.try_table_operation(lambda: self.client.open_by_key(self.spreadsheet_id))
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 515, in try_table_operation
+    raise e
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 485, in try_table_operation
+    return operation()  # Attempt to execute the operation
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 36, in <lambda>
+    self.spreadsheet = self.try_table_operation(lambda: self.client.open_by_key(self.spreadsheet_id))
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\client.py", line 155, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\spreadsheet.py", line 29, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\spreadsheet.py", line 230, in fetch_sheet_metadata
+    return self.client.fetch_sheet_metadata(self.id, params=params)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 305, in fetch_sheet_metadata
+    r = self.request("get", url, params=params)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 114, in request
+    response = self.session.request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\google\auth\transport\requests.py", line 538, in request
+    response = super(AuthorizedSession, self).request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sheets.googleapis.com', port=443): Max retries exceeded with url: /v4/spreadsheets/1b9lVGArClr21SG13osGk0rfkBAokUvdyuRgKg4-9e3Q?includeGridData=false (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000020E394A0400>: Failed to establish a new connection: [WinError 10065] A socket operation was attempted to an unreachable host'))
+2025-02-04 11:01:32,704 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 2 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-04 11:01:37,741 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 3 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E393B58D0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393B58D0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393B58D0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:01:42,797 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 4 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E39536D10>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E39536D10>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E39536D10>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:01:47,827 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 5 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E39494FA0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E39494FA0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E39494FA0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:01:52,859 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 6 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E3914D780>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3914D780>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3914D780>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:01:57,881 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 7 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E391A75E0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E391A75E0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E391A75E0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:02,916 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 8 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E391A5FF0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E391A5FF0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E391A5FF0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:07,935 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 9 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E394A03A0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E394A03A0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E394A03A0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:12,966 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 10 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E393B5600>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393B5600>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393B5600>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:17,979 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 11 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E394A0CD0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E394A0CD0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E394A0CD0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:23,013 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 12 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E391A4C40>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E391A4C40>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E391A4C40>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:28,045 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 13 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E391A6410>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E391A6410>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E391A6410>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:33,074 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 14 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E380BEEF0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E380BEEF0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E380BEEF0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:38,100 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 15 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E39536CE0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E39536CE0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E39536CE0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:43,124 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 16 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E393A7E50>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393A7E50>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393A7E50>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:48,156 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 17 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E393B5180>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393B5180>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393B5180>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:53,183 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 18 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E393B4D00>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393B4D00>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393B4D00>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:02:58,205 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 19 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E3920A410>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3920A410>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3920A410>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:03:03,230 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 20 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E39494E80>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E39494E80>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E39494E80>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:03:08,265 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 21 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E3914EB90>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3914EB90>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3914EB90>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:03:13,291 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 22 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E391A4C10>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E391A4C10>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E391A4C10>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:03:18,318 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 23 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E394A0400>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E394A0400>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E394A0400>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:03:23,343 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 24 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E394A0DC0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E394A0DC0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E394A0DC0>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:03:28,360 - ERROR - sellerboard_interaction - manage_products_or_planner - Account MALLONY returned exception after 25 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E393B5F30>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393B5F30>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E393B5F30>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 11:03:33,385 - ERROR - planner - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020E394A0E80>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E394A0E80>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 310, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 300, in main
+    manage_products_or_planner(base_dir, cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 720, in manage_products_or_planner
+    data_token_key, data_token_value, session = products_func(count_switch, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 68, in products
+    dashboard_response = session.get(dashboard_url, headers=headers)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E394A0E80>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-04 13:02:11,806 - ERROR - sb_dashb_n_days - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_n_days\sb_dashb_n_days.py", line 116, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_n_days\sb_dashb_n_days.py", line 106, in main
+    main_frame(base_dir=base_dir, cookies_file=cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 605, in main_frame
+    if "report" in entries_resp:
+TypeError: argument of type 'NoneType' is not iterable
+2025-02-07 09:29:57,047 - ERROR - sellerboard_interaction - manage_products_or_planner - Account Svitlana Chernova returned exception after 1 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 755, in manage_products_or_planner
+    flag_status, session = export_status_func(data_token_key, data_token_value, task_id, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 171, in export_status
+    response_post = session.post(url, data=payload, timeout=(60, 120))
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-07 19:06:45,338 - ERROR - products - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\products\products.py", line 307, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\products\products.py", line 295, in main
+    manage_products_or_planner(base_dir, cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 724, in manage_products_or_planner
+    switchAccount_resp = switch_account(table_sb_acc_id, data_token_key, data_token_value, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 72, in switch_account
+    switch_account_response = session.post(switch_account_url, data=post_data, headers=headers)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-13 10:00:27,730 - ERROR - sellerboard_interaction - manage_products_or_planner - Account Oksana Drobyna returned exception after 1 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x00000212D61F48B0>: Failed to resolve 'sheets.googleapis.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='sheets.googleapis.com', port=443): Max retries exceeded with url: /v4/spreadsheets/1VoQyYwU9Cp3d8PmTWwJitInreHX99MH4X0-Y0d2Nng4?includeGridData=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000212D61F48B0>: Failed to resolve 'sheets.googleapis.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 763, in manage_products_or_planner
+    cou = get_data_from_download_func(json_res, session, sheet_name, spreadsheet_id)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 283, in get_data_from_download
+    fill_table(filtered_rows)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 234, in fill_table
+    t = Table(spreadsheet_id)  # for working
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 36, in __init__
+    self.spreadsheet = self.try_table_operation(lambda: self.client.open_by_key(self.spreadsheet_id))
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 515, in try_table_operation
+    raise e
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 485, in try_table_operation
+    return operation()  # Attempt to execute the operation
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 36, in <lambda>
+    self.spreadsheet = self.try_table_operation(lambda: self.client.open_by_key(self.spreadsheet_id))
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\client.py", line 155, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\spreadsheet.py", line 29, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\spreadsheet.py", line 230, in fetch_sheet_metadata
+    return self.client.fetch_sheet_metadata(self.id, params=params)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 305, in fetch_sheet_metadata
+    r = self.request("get", url, params=params)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 114, in request
+    response = self.session.request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\google\auth\transport\requests.py", line 538, in request
+    response = super(AuthorizedSession, self).request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sheets.googleapis.com', port=443): Max retries exceeded with url: /v4/spreadsheets/1VoQyYwU9Cp3d8PmTWwJitInreHX99MH4X0-Y0d2Nng4?includeGridData=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000212D61F48B0>: Failed to resolve 'sheets.googleapis.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-20 10:36:21,955 - ERROR - sellerboard_interaction - manage_products_or_planner - Account NADOBA returned exception after 1 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 763, in manage_products_or_planner
+    cou = get_data_from_download_func(json_res, session, sheet_name, spreadsheet_id)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 283, in get_data_from_download
+    fill_table(filtered_rows)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 243, in fill_table
+    fill_bonus_tabel_acc_time()
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 219, in fill_bonus_tabel_acc_time
+    all_accounts_rows = all_accounts_table.try_table_operation(lambda: all_accounts_sheet.get_all_values())
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 515, in try_table_operation
+    raise e
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 485, in try_table_operation
+    return operation()  # Attempt to execute the operation
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 219, in <lambda>
+    all_accounts_rows = all_accounts_table.try_table_operation(lambda: all_accounts_sheet.get_all_values())
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\worksheet.py", line 483, in get_all_values
+    return self.get_values(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\worksheet.py", line 460, in get_values
+    return self.get(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\worksheet.py", line 952, in get
+    response = self.client.values_get(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 236, in values_get
+    r = self.request("get", url, params=params)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 114, in request
+    response = self.session.request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\google\auth\transport\requests.py", line 538, in request
+    response = super(AuthorizedSession, self).request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-20 10:37:55,094 - ERROR - sellerboard_interaction - manage_products_or_planner - Account Kostiantyn Moroz returned exception after 1 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 730, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 909, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\ssl_.py", line 469, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\ssl_.py", line 513, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 730, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 909, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\ssl_.py", line 469, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\ssl_.py", line 513, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 763, in manage_products_or_planner
+    cou = get_data_from_download_func(json_res, session, sheet_name, spreadsheet_id)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 283, in get_data_from_download
+    fill_table(filtered_rows)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 234, in fill_table
+    t = Table(spreadsheet_id)  # for working
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 36, in __init__
+    self.spreadsheet = self.try_table_operation(lambda: self.client.open_by_key(self.spreadsheet_id))
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 515, in try_table_operation
+    raise e
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 485, in try_table_operation
+    return operation()  # Attempt to execute the operation
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 36, in <lambda>
+    self.spreadsheet = self.try_table_operation(lambda: self.client.open_by_key(self.spreadsheet_id))
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\client.py", line 155, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\spreadsheet.py", line 29, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\spreadsheet.py", line 230, in fetch_sheet_metadata
+    return self.client.fetch_sheet_metadata(self.id, params=params)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 305, in fetch_sheet_metadata
+    r = self.request("get", url, params=params)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 114, in request
+    response = self.session.request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\google\auth\transport\requests.py", line 538, in request
+    response = super(AuthorizedSession, self).request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+2025-02-20 10:38:00,202 - ERROR - sellerboard_interaction - manage_products_or_planner - Account Kostiantyn Moroz returned exception after 2 attempt(s)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001F0D9DE8370>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F0D9DE8370>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 746, in manage_products_or_planner
+    session, entries_resp = entriesExport_func(session, data_token_key, data_token_value, sb_acc_id,
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 130, in entries_export
+    response = session.post(url, data=payload)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='app.sellerboard.com', port=443): Max retries exceeded with url: /en/inventory/export (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F0D9DE8370>: Failed to resolve 'app.sellerboard.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-27 09:45:22,452 - ERROR - planner - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 310, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 300, in main
+    manage_products_or_planner(base_dir, cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 763, in manage_products_or_planner
+    cou = get_data_from_download_func(json_res, session, sheet_name, spreadsheet_id)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 283, in get_data_from_download
+    fill_table(filtered_rows)
+  File "D:\PyCharm Projects\SellerBoard Python Project\planner_inventory\planner.py", line 234, in fill_table
+    t = Table(spreadsheet_id)  # for working
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 36, in __init__
+    self.spreadsheet = self.try_table_operation(lambda: self.client.open_by_key(self.spreadsheet_id))
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 482, in try_table_operation
+    raise Exception('Max attempt try!')
+Exception: Max attempt try!
+2025-02-27 10:24:42,227 - ERROR - sb_dashb_3days - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\response.py", line 748, in _error_catcher
+    yield
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\response.py", line 1209, in read_chunked
+    chunk = self._handle_chunk(amt)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\response.py", line 1146, in _handle_chunk
+    value = self._fp._safe_read(amt)  # type: ignore[union-attr]
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 631, in _safe_read
+    raise IncompleteRead(data, amt-len(data))
+http.client.IncompleteRead: IncompleteRead(5602 bytes read, 4638 more expected)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\response.py", line 1057, in stream
+    yield from self.read_chunked(amt, decode_content=decode_content)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\response.py", line 1189, in read_chunked
+    with self._error_catcher():
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\response.py", line 775, in _error_catcher
+    raise ProtocolError(f"Connection broken: {e!r}", e) from e
+urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(5602 bytes read, 4638 more expected)', IncompleteRead(5602 bytes read, 4638 more expected))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 106, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 95, in main
+    main_frame(base_dir=base_dir, cookies_file=cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 585, in main_frame
+    switchAccount_resp = switch_account(table_sb_acc_id, data_token_key, data_token_value, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 72, in switch_account
+    switch_account_response = session.post(switch_account_url, data=post_data, headers=headers)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 724, in send
+    history = [resp for resp in gen]
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 724, in <listcomp>
+    history = [resp for resp in gen]
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 265, in resolve_redirects
+    resp = self.send(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 746, in send
+    r.content
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\models.py", line 902, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\models.py", line 822, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ('Connection broken: IncompleteRead(5602 bytes read, 4638 more expected)', IncompleteRead(5602 bytes read, 4638 more expected))
+2025-02-28 10:49:03,857 - ERROR - sb_dashb_3days - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 106, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 95, in main
+    main_frame(base_dir=base_dir, cookies_file=cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 582, in main_frame
+    data_token_key, data_token_value, session = products(count_switch, session)
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 115, in products
+    dashboard_resp = dashboard_response.text
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\models.py", line 935, in text
+    content = str(self.content, encoding, errors="replace")
+MemoryError
+2025-02-28 11:03:44,800 - ERROR - sb_dashb_3days - <module> - Module finished with error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\YVV\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 106, in <module>
+    main()
+  File "D:\PyCharm Projects\SellerBoard Python Project\sb_dashb_to_prod_3days\sb_dashb_3days.py", line 95, in main
+    main_frame(base_dir=base_dir, cookies_file=cookies_file,
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 573, in main_frame
+    fill_start_time_to_table(spreadsheet_id, start_col_num)
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\sellerboard_interaction.py", line 241, in fill_start_time_to_table
+    t = Table(id_table)
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 36, in __init__
+    self.spreadsheet = self.try_table_operation(lambda: self.client.open_by_key(self.spreadsheet_id))
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 515, in try_table_operation
+    raise e
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 485, in try_table_operation
+    return operation()  # Attempt to execute the operation
+  File "D:\PyCharm Projects\SellerBoard Python Project\utilities\tables.py", line 36, in <lambda>
+    self.spreadsheet = self.try_table_operation(lambda: self.client.open_by_key(self.spreadsheet_id))
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\client.py", line 155, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\spreadsheet.py", line 29, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\spreadsheet.py", line 230, in fetch_sheet_metadata
+    return self.client.fetch_sheet_metadata(self.id, params=params)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 305, in fetch_sheet_metadata
+    r = self.request("get", url, params=params)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\gspread\http_client.py", line 114, in request
+    response = self.session.request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\google\auth\transport\requests.py", line 538, in request
+    response = super(AuthorizedSession, self).request(
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\PycharmProjects\SellerBoard\lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
